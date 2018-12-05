@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 
-public class MainActivity2 extends Activity
+public class MainActivity3 extends Activity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -16,13 +16,13 @@ public class MainActivity2 extends Activity
         //禁用Android系统的默认切换动画效果
         overridePendingTransition(Animation.INFINITE, Animation.INFINITE);
 
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main3);
         findViewById(R.id.main).setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(final View v)
             {
-                startActivity(new Intent(MainActivity2.this, MainActivity3.class));
+                startActivity(new Intent(MainActivity3.this, MainActivity.class));
             }
         });
     }
